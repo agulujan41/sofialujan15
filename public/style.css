@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+body{
+    margin:0px;
+    padding: 0px;
+    background: #ABAAA9 fixed;
+
+}
+.mainContainer{
+    width: 100%;
+    height: 100vh;
+    background-color: #ABAAA9 ;
+    display: flex;   
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.circleInfo{
+    position: relative;
+}
+.name{
+    position: absolute;
+    top: 0;  /* position the top  edge of the element at the middle of the parent */
+    left: 50%; /* position the left edge of the element at the middle of the parent */
+
+    transform: translate(-50%, 0%); /* This is a shorthand of
+                                         translateX(-50%) and translateY(-50%) */
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-size: 6em;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    z-index: 40;
+}
+.circleInfo{
+    position: relative;
+}
+.circle{
+    
+    width: 300px;
+    height: 300px;
+    border-top-left-radius : 48%;
+    border-top-right-radius : 50%;
+    border-bottom-left-radius : 48%;
+    border-bottom-right-radius : 58%;
+    background: #E5D9D9;
+    -webkit-animation: rotating 1s linear infinite;
+    
+}
+@-webkit-keyframes rotating {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.infoDiv{
+    width: 100%;
+    height: 100vh;
+    background: #E5D9D9;
+}
