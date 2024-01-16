@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
     margin:0px;
     padding: 0px;
@@ -78,12 +79,53 @@ body{
 .infoDiv{
     transform: skewY(-5deg);
     max-width: 100%;
-    min-height: 130vh;
+    min-height: 100vh;
     background: #E5D9D9;
     margin-top:10vh;
    padding-bottom: 20vh;
 }
-
+@media screen and (max-width:900px){
+    .circle{
+        width: 250px;
+        height: 250px;
+    
+    }
+    .circleBackground{
+     
+        width: 250px;
+        height: 250px;
+        
+    }
+    .name{
+        font-size: 5em;
+    }
+    .infoTitle h2{
+        font-size: 2.5em !important;
+        width:80%;
+    }
+    .globo{
+        height: 70px;
+    }
+} 
+@media screen and (max-width:700px){
+    .circle{
+        width: 250px;
+        height: 250px;
+    
+    }
+    .circleBackground{
+     
+        width: 250px;
+        height: 250px;
+        
+    }
+    .name{
+        font-size: 5em;
+    }
+    .infoTitle h2{
+        font-size: 2em;
+    }
+} 
 @media screen and (max-width:500px){
     .circle{
         width: 250px;
@@ -152,22 +194,27 @@ background: #E5D9D9;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 .infoTitle{
-    
-    font-family: "Alex Brush", cursive;
-  font-weight: 400;
-  font-style: normal;
  
   display: flex;
   flex-direction: column;
   gap: 0px;
+  z-index: 10;
 }
 .infoTitle h2{
-    font-size: 3.3em;
+    font-size: 4em;
     text-align: center;
     margin: 0;
     color: #737373;
+    font-family: "Allura", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #e5d9d92c !important;
+  margin: auto;
+  align-self: center;
 }
 .titleEvent{
     transform: skewY(5deg);
@@ -176,6 +223,7 @@ background: #E5D9D9;
     display: flex;
     flex-direction: column;
     align-items: center;
+    z-index: 40;
 }
 .infoTitlePic{
     
@@ -186,14 +234,27 @@ background: #E5D9D9;
     gap: 0px;
     
 }
-.infoTitlePic img{
+
+.globo{
     height: 100px;
-    filter: contrast(60%);
-    filter: brightness(120%);
+}
+
+
+@keyframes move {
+	0% {
+        display: flex;
+		bottom: -150px;
+        
+	}
+	100% {
+        display: none;
+		bottom: 100%;
+        
+	}
 }
 .titleEvent .hilo{
     margin-top: 10px;
-    width: 100%;
+    width: 80%;
 }
 .dontForgetContainer{
     max-width: 100%;
@@ -221,4 +282,9 @@ background: #E5D9D9;
     padding-left: 15px;
     padding-right: 15px;
     cursor: pointer;
+}
+@media screen and (max-width:900px) {
+    .ubicacion a{
+        font-size: 1.5em;
+    }
 }
