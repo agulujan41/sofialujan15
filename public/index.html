@@ -52,6 +52,7 @@
     </section>
     <section>
       <div class="infoDiv">
+        <img src="flower.png" class="flower" alt="">
         <div class="titleEvent">
           <div class="infoTitlePic">
           
@@ -62,6 +63,16 @@
             
           </div>
           <img src="hilo.png" alt=""  class="hilo"/>
+        </div>
+        <div class="eventoInformaciones">
+            <div class="eventoInformacion">
+              <h1>FECHA</h1>
+              <h2>Sábado 17 de Febrero de 13 a 18 hs</h2>
+            </div>
+            <div class="eventoInformacion">
+              <h1>LUGAR</h1>
+              <h2>Sobre Ruta 51</h2>
+            </div>
         </div>
         <div class="ubicacion">
           <a href="https://maps.app.goo.gl/oeAzGKgLxbLuVN118" target="_blank">UBICACIÓN</a>
@@ -97,8 +108,8 @@
     }
     for (let i=0;i<12;i++){
       let balloon = document.createElement("img");
-      balloon.src = "globorojo.png";
-      document.querySelector(".infoTitlePic").appendChild(balloon);
+      balloon.src = "globogris.png";
+      document.querySelector(".infoDiv").appendChild(balloon);
       
       balloon.style.height=ballonHeight+"px";
       balloon.style.position="absolute";
@@ -133,8 +144,8 @@
     sec = 0.2;
     for (let i=0;i<15;i++){
       let balloon = document.createElement("img");
-      balloon.src = "globorojo.png";
-      document.querySelector(".infoTitlePic").appendChild(balloon);
+      balloon.src = "globogris.png";
+      document.querySelector(".infoDiv").appendChild(balloon);
       balloon.style.height=ballonHeight+"px";
       balloon.style.position="absolute";
       balloon.style.filter = "contrast(20%)";
