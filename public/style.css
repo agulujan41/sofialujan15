@@ -528,3 +528,17 @@ background: #E5D9D9;
     width: 40px;
     z-index: 60;
 }
+@media screen and (orientation:landscape) {
+    .confirmTag{
+        
+        top:10px;
+    
+    }
+    .confirmTag a{
+        font-size: 1em;
+
+    }
+    .confirmTag span{
+        font-size: 1em;
+    }
+}
