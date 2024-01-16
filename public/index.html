@@ -52,7 +52,7 @@
     </section>
     <section>
       <div class="infoDiv">
-        <img src="flower.png" class="flower" alt="">
+        <img src="arrowdown.gif" class="flower" alt="">
         <div class="titleEvent">
           <div class="infoTitlePic">
           
@@ -68,6 +68,7 @@
             <div class="eventoInformacion">
               <h1>FECHA</h1>
               <h2>Sábado 17 de Febrero de 13 a 18 hs</h2>
+              <a href="https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MWxtazMyYmVuODZxZHVlOHQyNTBwcjhxdGUgYWd1bHVqYW40MUBt&tmsrc=agulujan41%40gmail.com" target="_blank">AGENDAR FECHA</a>
             </div>
             <div class="eventoInformacion">
               <h1>LUGAR</h1>
@@ -116,7 +117,7 @@
       balloon.style.filter = "contrast(20%)";
       balloon.style.filter = "brightness(110%)";
       balloon.style.bottom = "-120px";
-      balloon.style.animation = " move 6s infinite linear"
+      balloon.style.animation = " move 6s 1 linear"
       balloon.style.animationDelay = sec+"s";
       window.addEventListener("resize",function(){
         if (window.innerWidth> 1000){
@@ -142,7 +143,7 @@
     sec+=0.6;
     }
     sec = 0.2;
-    for (let i=0;i<15;i++){
+    for (let i=0;i<13;i++){
       let balloon = document.createElement("img");
       balloon.src = "globogris.png";
       document.querySelector(".infoDiv").appendChild(balloon);
@@ -151,7 +152,7 @@
       balloon.style.filter = "contrast(20%)";
       balloon.style.filter = "brightness(120%)";
       balloon.style.bottom = "-120px";
-      balloon.style.animation = " move 6s infinite linear"
+      balloon.style.animation = " move 6s 1 linear"
       window.addEventListener("resize",function(){
         if (window.innerWidth> 1000){
           balloon.style.height="100px";

@@ -81,7 +81,7 @@ body{
     transform: skewY(-5deg);
     max-width: 100%;
   
-    background: #E5D9D9;
+    background: #F4EEF1;
     margin-top:10vh;
    padding-bottom: 20vh;
 }
@@ -213,7 +213,8 @@ background: #E5D9D9;
     font-family: "Allura", cursive;
   font-weight: 400;
   font-style: normal;
-  background-color: #e5d9d92c !important;
+  background-color: #f4eef11f !important;
+  border-radius: 10%;
   margin: auto;
   align-self: center;
 }
@@ -283,7 +284,7 @@ background: #E5D9D9;
     border-radius: 12px;
     font-size: 2em;
     font-weight: 700;
-    color:#E5D9D9;
+    color:#F4EEF1;
     text-decoration: none;
     padding-left: 15px;
     padding-right: 15px;
@@ -331,6 +332,16 @@ background: #E5D9D9;
     font-style: normal;
     text-align: center;
 }
+.eventoInformacion a{
+    background-color: #eeebec;
+    border-radius: 1px solid #968a8b65;
+    border-radius: 20px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color:#968A8B;
+    padding: 10px;
+    
+}
 @media screen and (max-width:900px) {
     .eventoInformaciones{
         flex-direction: column;
@@ -338,17 +349,19 @@ background: #E5D9D9;
    
 }
 .flower{
-    height: 150px;
+    height: 80px;
     position: absolute;
-    top: -20px;
+    top: 70px;
+    position: absolute;
     left: 0;
-    padding: 20px;
-    animation: shake 6s infinite linear;
+    right: 0;
+    margin: auto;
+    transform: skewY(5deg);
 }
 
 @media screen and (max-width:900px) {
     .flower{
-        height: 100px;
+        height: 70px;
     }
     
 }
