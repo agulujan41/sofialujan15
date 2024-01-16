@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
     margin:0px;
     padding: 0px;
@@ -34,6 +36,7 @@ body{
     font-style: normal;
     color: white;
     z-index: 40;
+    text-shadow:  8px 0px 2px #a5a2a2;
 }
 .circleInfo{
     position: relative;
@@ -46,20 +49,157 @@ body{
     border-top-right-radius : 50%;
     border-bottom-left-radius : 48%;
     border-bottom-right-radius : 58%;
-    background: #E5D9D9;
-    -webkit-animation: rotating 1s linear infinite;
-    
+    background-color: #E5D9D9;
+    filter: opacity(100%);
+    animation: rotating 1s linear infinite;
+    z-index: 30;
 }
-@-webkit-keyframes rotating {
+.circleBackground{
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    background-color: #E5D9D9;
+    border-radius: 50%;
+}
+@keyframes rotating {
     from{
-        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+       
     }
     to{
-        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+        
     }
 }
 .infoDiv{
+    transform: skewY(-5deg);
+    width: 100%;
+    min-height: 130vh;
+    background: #E5D9D9;
+    margin-top:10vh;
+   padding-bottom: 20vh;
+}
+
+@media screen and (max-width:500px){
+    .circle{
+        width: 250px;
+        height: 250px;
+    
+    }
+    .circleBackground{
+     
+        width: 250px;
+        height: 250px;
+        
+    }
+    .name{
+        font-size: 5em;
+    }
+} 
+@media screen and (max-width:300px){
+    .circle{
+        width: 250px;
+        height: 250px;
+    
+    }
+    .name{
+        font-size: 5em;
+    }
+} 
+.estrellas{
+    
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    
+}
+.estrella{
+    background: url("estrella.gif");
+    
+   
+    background-size: contain;
+}
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+/* Track */
+::-webkit-scrollbar-track {
+background: #ABAAA9;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #E5D9D9;
+border-radius: 10px;
+height: 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #E5D9D9;
+}  
+.infoDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.infoTitle{
+    
+    font-family: "Alex Brush", cursive;
+  font-weight: 400;
+  font-style: normal;
+ 
+  display: flex;
+  flex-direction: column;
+  gap: 0px;
+}
+.infoTitle h2{
+    font-size: 3.3em;
+    text-align: center;
+    margin: 0;
+    color: #737373;
+}
+.titleEvent{
+    transform: skewY(5deg);
+    margin-top: 20vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.infoTitlePic{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 0px;
+    
+}
+.infoTitlePic img{
+    height: 100px;
+    filter: contrast(60%);
+    filter: brightness(120%);
+}
+.titleEvent .hilo{
+    margin-top: 10px;
+    width: 120%;
+}
+.dontForgetContainer{
     width: 100%;
     height: 100vh;
-    background: #E5D9D9;
+    background-color: #ABAAA9;
+    z-index: 10;
+    position: relative;
+    top:-10vh;
+    
+    
 }

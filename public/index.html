@@ -24,7 +24,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
     <title>Sofía Luján</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -41,18 +41,50 @@
     -->
     <section id="mainSection">
       <div class="mainContainer">
-
-          <div class="circleInfo">
-              <div class="circle">
-                  
-          </div>
+        <div class="circleInfo">
+          <div class="circleBackground"></div>
+          <div class="circle"></div>
           <h1 class="name">Sofia</h1>
-         </div>
-         
+        </div>
+        <div class="estrellas" id="estrellas"></div>
+        <div class="cuadradoVertical"></div>
       </div>
-  </section>
-  <section>
-      <div class="infoDiv"></div>
-  </section>
+    </section>
+    <section>
+      <div class="infoDiv">
+        <div class="titleEvent">
+          <div class="infoTitlePic">
+            <img src="globorojo.png" alt="" />
+            <div class="infoTitle">
+              <h2>Te espero para que festejemos juntos</h2>
+              <h2>mis 15 años</h2>
+            </div>
+            <img src="globorojo.png" alt="" />
+          </div>
+          <img src="hilo.png" alt=""  class="hilo"/>
+        </div>
+      </div>
+    </section>
+    <section id="dontForget">
+      <div class="dontForgetContainer">
+      
+      </div>
+    </section>
   </body>
+  <script>
+    let cant =35;
+    if (window.innerWidth>800){
+      let cant =100;
+    }
+    for (let i = 0; i < cant; i++) {
+      let star = document.createElement("div");
+      star.classList.add("estrella");
+      var randomWidth = Math.floor(Math.random() * (50 - 5 + 1)) + 50; // Tamaño aleatorio entre 100px y 200px
+      star.style.height = randomWidth + "px";
+      star.style.width = randomWidth + "px";
+      let rotation = Math.floor(Math.random() * (140 - 8 + 1)) + 140; // Tamaño aleatorio entre 100px y 200px
+      star.style.transform = "rotate(" + rotation + "deg);";
+      document.querySelector(".estrellas").appendChild(star);
+    }
+  </script>
 </html>
