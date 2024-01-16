@@ -512,7 +512,7 @@ background: #E5D9D9;
 .confirmTag{
     position: absolute;
     display: flex;
-    top:40px;
+    top:100px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
