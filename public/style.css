@@ -205,3 +205,20 @@ background: #E5D9D9;
     
     
 }
+.ubicacion{
+    position: relative;
+    bottom: 20px;
+    transform: skewY(5deg);   
+}
+.ubicacion a{
+    background-color: #737373;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 2em;
+    font-weight: 700;
+    color:#E5D9D9;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
