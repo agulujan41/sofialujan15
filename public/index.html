@@ -40,6 +40,27 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+    <div class="loader" id="loader">
+        <img src="estrella.gif" alt="">
+    </div>
+    <div class="popupAsking" id="popupAsking">
+  
+        <div class="circle2">
+          
+        </div>
+        <div class="circleContenedor2">
+          <h1 class="name2">Sofia</h1>
+        </div>
+        <div class="estrellas2"></div>
+        <div class="askingMusic">
+            <a href="" id="volume_up"><span class="material-symbols-outlined">
+              volume_up
+              </span>Entrar con música</a>
+            <a href="" id="volume_off"><span class="material-symbols-outlined">
+              volume_off
+              </span>Entrar sin música</a>
+        </div>
+    </div>
     <section id="mainSection">
       <div class="mainContainer">
         <div class="circleInfo">
@@ -121,7 +142,7 @@
       <div class="confirmContainer">
         <div class="confirmTag">
           
-          <a href="https://api.whatsapp.com/send?phone=5493874648980&text=Hola, ¿Como estas?, te confirmo la asistencia la asistencia a los 15 años de Sofi." target="_blank" rel="noopener noreferrer">
+          <a href="https://api.whatsapp.com/send?phone=5493876123828&text=¡Hola Sofi!, ¿Como estas?, te confirmo la asistencia la asistencia a los 15 años de Sofi." target="_blank" rel="noopener noreferrer">
             <span class="material-symbols-outlined">
               check
               </span>
@@ -138,115 +159,9 @@
       </div>
     </section>
     
+   
   </body>
-  <script>
-    let cant =35;
-    if (window.innerWidth>800){
-       cant =100;
-    }
-    for (let i = 0; i < cant; i++) {
-      let star = document.createElement("div");
-      star.classList.add("estrella");
-      var randomWidth = Math.floor(Math.random() * (50 - 5 + 1)) + 50; // Tamaño aleatorio entre 100px y 200px
-      star.style.height = randomWidth + "px";
-      star.style.width = randomWidth + "px";
-      let rotation = Math.floor(Math.random() * (140 - 8 + 1)) + 140; // Tamaño aleatorio entre 100px y 200px
-      star.style.transform = "rotate(" + rotation + "deg);";
-      document.querySelector(".estrellas").appendChild(star);
-    }
-    //left balloons
-    let sec = 0.2;
-    let ballonHeight = 70;
-    if (window.innerWidth>1000){
-      ballonHeight = 120;
-    }
-    for (let i=0;i<12;i++){
-      let balloon = document.createElement("img");
-      balloon.src = "globogris.png";
-      document.querySelector(".infoDiv").appendChild(balloon);
-      
-      balloon.style.height=ballonHeight+"px";
-      balloon.style.position="absolute";
-      balloon.style.filter = "contrast(20%)";
-      balloon.style.filter = "brightness(110%)";
-      balloon.style.bottom = "-120px";
-      balloon.style.animation = " move 6s 1 linear"
-      balloon.style.animationDelay = sec+"s";
-      window.addEventListener("resize",function(){
-        if (window.innerWidth> 1000){
-          balloon.style.height="100px";
-        }
-        else{
-          balloon.style.height="70px";
-        }
-      });
-      switch(i%3){
-        case 0:
-          balloon.style.left = "0px";
-          break;
-        case 1:
-          balloon.style.left = "30px";
-          break;
-        case 2:
-          balloon.style.left = "60px";
-         
-          break;
-      }
-      
-    sec+=0.6;
-    }
-    sec = 0.2;
-    for (let i=0;i<13;i++){
-      let balloon = document.createElement("img");
-      balloon.src = "globogris.png";
-      document.querySelector(".infoDiv").appendChild(balloon);
-      balloon.style.height=ballonHeight+"px";
-      balloon.style.position="absolute";
-      balloon.style.filter = "contrast(20%)";
-      balloon.style.filter = "brightness(120%)";
-      balloon.style.bottom = "-120px";
-      balloon.style.animation = " move 6s 1 linear"
-      window.addEventListener("resize",function(){
-        if (window.innerWidth> 1000){
-          balloon.style.height="100px";
-        }
-        else{
-          balloon.style.height="70px";
-        }
-      });
-      balloon.style.animationDelay = sec+"s";
-      switch(i%3){
-        case 0:
-          balloon.style.right = "0px";
-          break;
-        case 1:
-          balloon.style.right = "30px";
-          break;
-        case 2:
-          balloon.style.right = "60px";
-         
-          break;
-      }
-      
-      sec+=0.6;
-
-      
-    }
-    const observer = new IntersectionObserver((entries)=>{
-    entries.forEach((entry)=>{
-        if(entry.isIntersecting){
-            entry.target.classList.add('show');
-        }
-        
-     });
-});
-
-  const hiddenElements = document.querySelectorAll('.hidden');
-  hiddenElements.forEach((el)=>observer.observe(el));
-  var audio = document.createElement("AUDIO")
-document.body.appendChild(audio);
-audio.src = "cancion.mp3"
-
-
-  </script>
+  
+  
+  <script src="script.js" type="text/javascript"></script>
 </html>

@@ -10,8 +10,16 @@ body{
     margin:0px;
     padding: 0px;
     background: #ABAAA9 fixed;
-    overflow-x: hidden;
     user-select: none;
+    overflow: hidden;
+}
+.bodyCustom{
+    margin:0px;
+    padding: 0px;
+    background: #ABAAA9 fixed;
+    user-select: none;
+    overflow: scroll;
+    overflow-x: hidden;
 }
 .mainContainer{
     max-width: 100%;
@@ -687,3 +695,134 @@ background: #E5D9D9;
 }
 
 
+
+.loader{
+    opacity: 1;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    margin: 0;
+    z-index: 1000;
+    background-color: #E5D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.loader img{
+    height: 60px;
+    animation: aumentar 6s ease-in-out;
+}
+@keyframes aumentar {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(2);
+    }   
+}
+.close{
+    opacity: 0;
+    transition: 1.5s;
+    display: none;
+}
+.popupAsking{
+    z-index: 900;
+    height: 100vh;
+    width: 100%;
+    background-color: #E5D9D9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle2{
+    width: 300px;
+    height: 300px;
+    border-top-left-radius : 48%;
+    border-top-right-radius : 50%;
+    border-bottom-left-radius : 48%;
+    border-bottom-right-radius : 58%;
+    background-color: #b4b4b4;
+    filter: opacity(100%);
+    animation: rotating 1s linear infinite;
+    z-index: 902;
+    
+}
+.circleContenedor2{
+    width: 300px;
+    height: 300px;
+    border-top-left-radius : 48%;
+    border-top-right-radius : 50%;
+    border-bottom-left-radius : 48%;
+    border-bottom-right-radius : 58%;
+    z-index: 903;
+    
+    position: absolute;
+    
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.name2{
+
+    font-family: "Dancing Script", cursive;
+    text-align: center;
+    font-optical-sizing: auto;
+    font-size: 6em;
+    font-weight: 700;
+    font-style: normal;
+    color: white;
+    z-index: 40;
+    text-shadow:  8px 0px 2px #a5a2a2;
+    z-index: 903;
+  
+}
+.estrellas2{
+    z-index: 901;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+    
+}
+.askingMusic{
+    z-index: 904;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+
+    position: absolute;
+    bottom: 10vh;
+}
+.askingMusic a{
+    cursor: pointer;
+    width: auto;
+    background-color: rgb(255, 241, 232);
+    border: 1px solid #E5D9D9;
+    border-radius: 20px;
+    color: #737373;
+    font-weight: 400;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+.askingMusic span{
+    font-size: 1.5em;
+}
+@media screen and (orientation:portrait) {
+    .askingMusic{
+        flex-direction: column;
+    }
+}
