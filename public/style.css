@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=DM+Serif+Display:ital@0;1&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&family=DM+Serif+Display:ital@0;1&family=Fasthand&family=Freehand&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 body{
     margin:0px;
     padding: 0px;
@@ -466,7 +467,7 @@ background: #E5D9D9;
 
 @media screen and (max-width:900px) {
     .dontForgetContainer .card{
-        height: 75vh;
+        height: 60vh;
         width: 80%;
         background-color: #E5D9D9;
         border-radius: 30px;
@@ -512,7 +513,7 @@ background: #E5D9D9;
 .confirmTag{
     position: absolute;
     display: flex;
-    top:100px;
+    top:60px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -531,7 +532,7 @@ background: #E5D9D9;
 @media screen and (orientation:landscape) {
     .confirmTag{
         
-        top:10px;
+        top:10vh;
     
     }
     .confirmTag a{
@@ -540,5 +541,134 @@ background: #E5D9D9;
     }
     .confirmTag span{
         font-size: 1em;
+    }
+}
+@media screen and (max-width:700px) {
+    .confirmTag a{
+        font-size: 1.3em;
+        gap: 10px;
+
+    }
+    .confirmTag span{
+        font-size: 1.3em;
+    }
+
+}
+#cardVestimenta{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    justify-content: space-around;
+   
+}
+#cardVestimenta h1{
+    margin: 0px;
+    font-family: "Fasthand", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3em;
+    width: 100%;
+    text-align: center;
+    color: #747474;
+    
+}
+.vestimenta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    margin:0;
+}
+.vestimenta img{
+    height: 100px;
+    margin:0;
+}
+.vestimenta h2{
+    color: #929090;
+    margin:0;
+    text-align: center;
+    font-weight: 400;
+}
+.vestimenta h3{
+    margin:0;
+    color:white;
+    font-size: 2em;
+    text-shadow: 0 0 5px #ffff, 0 0 10px #ffff, 0 0 15px #ffff; 
+    text-align: center;
+}
+.vestimenta h4{
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2em;
+    text-align: center;
+    color: #AB9B9B;
+
+}
+.eleganteDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin: 0;
+}
+#cardPileta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#cardPileta img{
+   
+    width: 50%;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+#cardPileta p{
+    margin: 0;
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-size: 1.6em;
+    text-align: end;
+    color: #AB9B9B;
+    margin-right: 30px;
+}
+#chanclas{
+    width: 25%;
+    margin-right: 10px;
+    margin-bottom: 10px;
+
+    align-self: self-end;
+}
+@media screen and (orientation:landscape) {
+    #cardPileta img{
+        height: 120px;
+        width: min-content;
+    }
+}
+@media screen  and (max-height:500px){
+    .dontForgetContainer .card{
+        width: 90%;
+    }
+    #cardPileta{
+        flex-direction: row;
+    }
+    .vestimenta{
+        flex-direction: row;
+        align-items: center;
+    }
+    #cardPileta img{
+   
+        height: 100px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+    #cardPileta p{
+        margin: 0;
+        
+    }
+    #chanclas{
+        height: 100px;
+        margin: 0;
     }
 }
