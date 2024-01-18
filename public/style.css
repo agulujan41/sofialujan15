@@ -1026,41 +1026,49 @@ background: #E5D9D9;
 @media screen  and (max-width:1000px){
     .vestimenta img{
         height: 250px;
+        width: 250px;
     }   
      #cardPileta img{
    
         height: 250px;
+        width: 250px;
         
     }
     #chanclas{
     height: 250px;
+    width: 250px;
     }
 }
 
 @media screen  and (max-width:900px){
     .vestimenta img{
         height: 200px;
+        width: 200px;  
     }   
     #cardPileta img{
    
         height: 200px;
-        
+        width: 200px;
     }
     #chanclas{
     height: 200px;
+    width: 200px;
     }
 }
 @media screen  and (max-width:700px){
     .vestimenta img{
         height: 150px;
+        width: 150px;
     }   
      #cardPileta img{
    
         height: 150px;
+        width: 150px;
         
     }
     #chanclas{
     height: 150px;
+    width: 150px;
     }
 }
 @media screen  and (max-width:500px){
@@ -1069,14 +1077,16 @@ background: #E5D9D9;
     }
     .vestimenta img{
         height: 150px;
+        width: 150px;
     }   
      #cardPileta img{
    
         height: 150px;
-        
+        width: 150px;
     }
     #chanclas{
     height: 150px;
+    width: 150px;
     }
 }
 @media screen  and (max-width:300px){
@@ -1085,14 +1095,16 @@ background: #E5D9D9;
     }
     .vestimenta img{
         height: 100px;
+        width: 100px;
     }   
      #cardPileta img{
         margin: 0;
         height: 100px;
-        
+        width: 100px;
     }
     #chanclas{
     height: 100px;
+    width: 100px;
     margin: 0;
     }
 }
@@ -1119,15 +1131,18 @@ background: #E5D9D9;
     }
     .vestimenta img{
         height: 220px;
+        width: 220px;
     }   
      #cardPileta img{
         margin: 10px;
         height: 220px;
+        width: 220px;
         
     }
     #chanclas{
     height: 220px;
     margin: 0;
+    width: 220px;
     }
 }
 @media screen  and (max-height:500px) and (orientation:landscape){
@@ -1136,14 +1151,16 @@ background: #E5D9D9;
     }
     .vestimenta img{
         height: 130px;
+        width: 130px;
     }   
      #cardPileta img{
         margin: 10px;
         height: 130px;
-        
+        width: 130px;
     }
     #chanclas{
     height: 130px;
+    width: 130px;
     margin: 0;
     }
 }
