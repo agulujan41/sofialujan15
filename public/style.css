@@ -96,6 +96,7 @@ body{
     background: #F4EEF1;
     margin-top:10vh;
    padding-bottom: 20vh;
+   min-height: 100vh;
 }
 @media screen and (max-width:900px){
     .circle{
@@ -471,6 +472,7 @@ background: #E5D9D9;
     z-index: 60;
 }
 .dontForgetContainer{
+    min-height: 100vh;
     max-width: 100%;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -487,7 +489,7 @@ background: #E5D9D9;
 }
 .dontForgetContainer .card{
     
-    height: 70vh;
+    height: 75vh;
     max-height: 1500px;
     width: 80%;
     background-color: #E5D9D9;
@@ -510,7 +512,7 @@ background: #E5D9D9;
 
 @media screen and (max-width:900px) {
     .dontForgetContainer .card{
-        height: 80vh;
+        height: 75vh;
         width: 80%;
         background-color: #E5D9D9;
         border-radius: 30px;
@@ -626,7 +628,7 @@ background: #E5D9D9;
 }
 
 .vestimenta img{
-    height: 100px;
+    height: 300px;
     width: min-content;
     margin:0;
 }
@@ -680,7 +682,7 @@ background: #E5D9D9;
 }
 #cardPileta img{
    
-    height: 30%;
+    height: 300px;
     width: min-content;
     margin-left: 10px;
     margin-top: 10px;
@@ -694,7 +696,7 @@ background: #E5D9D9;
     color: #AB9B9B;
 }
 #chanclas{
-    height: 30%;
+    height: 300px;
     width: min-content;
     margin-right: 10px;
     margin-bottom: 10px;
@@ -707,10 +709,10 @@ background: #E5D9D9;
         width: 90%;
     }
     #cardPileta{
-        flex-direction: row;
+        flex-direction: column;
     }
     .vestimenta{
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
     }
     #cardPileta img{
@@ -724,7 +726,7 @@ background: #E5D9D9;
         text-align: center;
     }
     #chanclas{
-        height: 100px;
+        height: 20%;
         margin: 0;
     }
 }
@@ -1016,4 +1018,130 @@ background: #E5D9D9;
         max-width: 700px;
         max-height: 700px;
     }   
+}
+
+/* IMAGENES BUGS*/
+@media screen  and (max-width:1000px){
+    .vestimenta img{
+        height: 250px;
+    }   
+     #cardPileta img{
+   
+        height: 250px;
+        
+    }
+    #chanclas{
+    height: 250px;
+    }
+}
+
+@media screen  and (max-width:900px){
+    .vestimenta img{
+        height: 200px;
+    }   
+    #cardPileta img{
+   
+        height: 200px;
+        
+    }
+    #chanclas{
+    height: 200px;
+    }
+}
+@media screen  and (max-width:700px){
+    .vestimenta img{
+        height: 150px;
+    }   
+     #cardPileta img{
+   
+        height: 150px;
+        
+    }
+    #chanclas{
+    height: 150px;
+    }
+}
+@media screen  and (max-width:500px){
+    #cardPileta p{
+        font-size: 1.5em;
+    }
+    .vestimenta img{
+        height: 150px;
+    }   
+     #cardPileta img{
+   
+        height: 150px;
+        
+    }
+    #chanclas{
+    height: 150px;
+    }
+}
+@media screen  and (max-width:300px){
+    #cardPileta p{
+        font-size: 1.5em;
+    }
+    .vestimenta img{
+        height: 100px;
+    }   
+     #cardPileta img{
+        margin: 0;
+        height: 100px;
+        
+    }
+    #chanclas{
+    height: 100px;
+    margin: 0;
+    }
+}
+
+
+@media screen and (orientation:landscape) {
+     #cardPileta{
+        flex-direction: row;
+    }
+    .vestimenta{
+        flex-direction: row;
+        align-items: center;
+    }
+    .vestimenta img{
+        order: 1;
+    }
+    .recommendedVestimenta {
+        order: 2;
+    }
+}
+@media screen  and (max-height:800px) and (orientation:landscape){
+    #cardPileta p{
+        font-size: 2em;
+    }
+    .vestimenta img{
+        height: 220px;
+    }   
+     #cardPileta img{
+        margin: 10px;
+        height: 220px;
+        
+    }
+    #chanclas{
+    height: 220px;
+    margin: 0;
+    }
+}
+@media screen  and (max-height:500px) and (orientation:landscape){
+    #cardPileta p{
+        font-size: 1.5em;
+    }
+    .vestimenta img{
+        height: 130px;
+    }   
+     #cardPileta img{
+        margin: 10px;
+        height: 130px;
+        
+    }
+    #chanclas{
+    height: 130px;
+    margin: 0;
+    }
 }
