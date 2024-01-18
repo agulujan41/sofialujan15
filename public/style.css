@@ -563,7 +563,7 @@ background: #E5D9D9;
     justify-content: center;
     align-items: center;
     z-index: 20;
-
+    justify-content: space-between;
 }
 .confirmTag span{
     text-align: center;
