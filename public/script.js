@@ -99,10 +99,6 @@ hiddenElements.forEach((el) => observer.observe(el));
 var audio = document.createElement("AUDIO");
 document.body.appendChild(audio);
 audio.src = "cancion.mp3";
-let loader = document.getElementById("loader");
-setTimeout(() => {
-  loader.classList.add("close");
-}, 6000);
 
 
 
@@ -141,3 +137,16 @@ for (let i=0;i<as.length;i++){
         return false;
     }
 }
+
+let loader = document.getElementById("loader");
+setTimeout(() => {
+  loader.classList.add("close");
+  askingWindow.removeAttribute("class");
+  askingWindow.classList.add("popupAsking");
+}, 6000);
+
+
+window.addEventListener('unload', function () {
+    window.location.reload();
+});
+

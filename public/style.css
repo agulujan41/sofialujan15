@@ -728,7 +728,8 @@ background: #E5D9D9;
     display: none;
 }
 .popupAsking{
-    z-index: 900;
+    position: fixed;
+    z-index: 900 !important;
     height: 100vh;
     width: 100%;
     background-color: #E5D9D9;
@@ -824,5 +825,11 @@ background: #E5D9D9;
 @media screen and (orientation:portrait) {
     .askingMusic{
         flex-direction: column;
+    }
+    .askingMusic span{
+        font-size: 1em;
+    }
+    .askingMusic a{
+        font-size: 1em;
     }
 }
