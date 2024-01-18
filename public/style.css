@@ -486,7 +486,9 @@ background: #E5D9D9;
     justify-content: center; 
 }
 .dontForgetContainer .card{
+    
     height: 70vh;
+    max-height: 1500px;
     width: 80%;
     background-color: #E5D9D9;
     border-radius: 30px;
@@ -984,4 +986,25 @@ background: #E5D9D9;
         bottom: auto;
         gap: 30px;
     }       
+}
+@media screen and (orientation:portrait) {
+    .circle{
+        
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .circleBackground{
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .circle2{
+        max-width: 700px;
+        max-height: 700px;
+        
+    
+    }
+    .circleContenedor2{
+        max-width: 700px;
+        max-height: 700px;
+    }   
 }
