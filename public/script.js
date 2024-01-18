@@ -28,7 +28,7 @@ for (let i = 0; i < 12; i++) {
   balloon.style.filter = "contrast(20%)";
   balloon.style.filter = "brightness(110%)";
   balloon.style.bottom = "-120px";
-  balloon.style.animation = " move 6s 1 linear";
+  balloon.classList.add("globitoQuieto");
   balloon.style.animationDelay = sec + "s";
   window.addEventListener("resize", function () {
     if (window.innerWidth > 1000) {
@@ -62,7 +62,7 @@ for (let i = 0; i < 13; i++) {
   balloon.style.filter = "contrast(20%)";
   balloon.style.filter = "brightness(120%)";
   balloon.style.bottom = "-120px";
-  balloon.style.animation = " move 6s 1 linear";
+  balloon.classList.add("globitoQuieto");
   window.addEventListener("resize", function () {
     if (window.innerWidth > 1000) {
       balloon.style.height = "100px";
@@ -149,4 +149,18 @@ setTimeout(() => {
 window.addEventListener('unload', function () {
     window.location.reload();
 });
-
+let infoDiv = document.querySelector(".infoDiv");
+let globos3  = document.querySelector(".infoTitle").getElementsByTagName("img");
+const observer1 = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.remove("globitoQuieto")
+        entry.target.classList.add("globitoMoviendose");
+        globos3[0].classList.add("globos3");
+        globos3[1].classList.add("globos3");
+      }
+    });
+  });
+  
+const globitosQuietos = document.querySelectorAll(".globitoQuieto");
+globitosQuietos.forEach((el) => observer1.observe(el));

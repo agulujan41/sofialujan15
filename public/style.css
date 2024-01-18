@@ -417,10 +417,13 @@ background: #E5D9D9;
     top:-10px;
     z-index: 10;
     opacity: 0%;
+    
+    
+}
+.globos3{
     animation:aparecer 3s linear forwards,shake 3s infinite;
     
     animation-delay:  11s;
-    
 }
 #glove1{
     left:30px;
@@ -832,4 +835,12 @@ background: #E5D9D9;
     .askingMusic a{
         font-size: 1em;
     }
+}
+.globitoQuieto{
+    opacity: 0;
+    top: 0;
+}
+.globitoMoviendose{
+    opacity: 1;
+  animation : move 6s 1 linear;
 }
