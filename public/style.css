@@ -566,6 +566,7 @@ background: #E5D9D9;
 
 }
 .confirmTag span{
+    text-align: center;
     font-size: 2em;
     vertical-align: center;
     color: pink;
